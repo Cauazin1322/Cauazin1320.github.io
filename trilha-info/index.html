@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    >
+    <title>Trilha Info – Técnico em Informática IFRN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <i></i>
+          <b>Trilha Info</b>
+        </div>
+
+        <div class="xp" aria-live="polite">
+          <span id="fire" class="fire"></span>
+          <span id="xp">0 XP</span>
+          <div class="bar">
+            <span id="gbar"></span>
+          </div>
+          <span id="gpct">0%</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <h1>Sua trilha de Informática, do 1º ao 4º ano</h1>
+        <p>
+          Videoaulas, resumos, listas de exercícios e quizzes organizados por
+          etapa. Escolha um ano e siga a trilha no seu ritmo. Seu progresso
+          fica salvo neste aparelho.
+        </p>
+
+        <svg
+          class="trail"
+          viewBox="0 0 800 230"
+          role="group"
+          aria-label="Trilha dos 4 anos"
+        >
+          <path
+            class="path"
+            d="M70 170 C190 170 190 70 300 70 S 420 170 520 170 S 640 70 730 70"
+          />
+          <path
+            class="done"
+            id="dpath"
+            d="M70 170 C190 170 190 70 300 70 S 420 170 520 170 S 640 70 730 70"
+            pathLength="100"
+            stroke-dasharray="0 100"
+          />
+          <g id="nodes"></g>
+        </svg>
+      </section>
+
+      <div class="streak" id="streak"></div>
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <h2 id="yt" style="margin-bottom: 6px"></h2>
+      <p id="yd" style="color: var(--mut); margin: 0 0 16px"></p>
+      <div class="grid" id="grid"></div>
+
+      <div class="note">
+        <b>Para a pesquisa:</b> ao terminar uma etapa, você poderá responder a
+        um quiz curto e a um questionário rápido sobre o acesso a computador e
+        internet. Nenhuma resposta vale nota.
+        <i>
+          (Aqui entra o link do seu Google Forms e o TCLE/TALE.)
+        </i>
+      </div>
+
+      <footer>
+        Protótipo • conteúdos conforme o PPC do Curso Técnico em Informática
+        (IFRN). Vídeos são incorporados do YouTube, com crédito aos canais de
+        origem. Construído por Cauã Xavier Silva e Maria Isabela
+      </footer>
+    </div>
+
+    <dialog id="dlg" aria-labelledby="dt">
+      <div class="dh">
+        <div>
+          <h2 id="dt"></h2>
+          <div class="bar" style="margin-top: 8px; width: 200px">
+            <span id="dbar"></span>
+          </div>
+        </div>
+        <button class="x" id="cl" aria-label="Fechar">×</button>
+      </div>
+
+      <div class="db">
+        <div class="tabs" role="tablist" id="dtabs" style="margin-top: 6px"></div>
+        <div id="dc"></div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

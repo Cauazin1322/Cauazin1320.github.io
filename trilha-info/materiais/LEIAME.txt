@@ -1,0 +1,3 @@
+Coloque aqui os PDFs de exercicios e resumos.
+Sugestao: uma subpasta por disciplina (ex.: intro-prog/).
+Depois registre cada arquivo em js/dados.js, no objeto EXERCICIOS.
